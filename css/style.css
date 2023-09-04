@@ -250,6 +250,7 @@ section {
     width: 270px;
     display: flex;
     justify-content: space-between;
+    z-index:5;
 }
 
 .socials a {
@@ -264,7 +265,7 @@ section {
     border-radius: 50%;
     font-size: 20px;
     color: var(--main-color);
-    z-index: 2;
+    z-index: 1;
     overflow: hidden;
     transition: .5s;
 }
