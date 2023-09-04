@@ -1,0 +1,140 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UFT-8">
+  <link rel="stylesheet" href="styles.css">
+  <title>https://survey-form.freecodecamp.rocks</title>
+</head>  
+
+<body>
+  <div class="container">
+<header>
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve the platform</p>
+</header>
+<form id="survey-form">
+  <fieldset>
+  <label for="name" id="name-label">Name <input type="text"id="name" placeholder=" Enter your name" required/></label>
+  <label for="email" id="email-label">Email <input type="email"id="email" placeholder=" Enter your email" required/></label>
+  <label for="number" id="number-label">Age(optional) <input type="number"id="number" placeholder=" Age " min="13" max="50"/></label>
+  
+  <label for="dropdown">Which option best describes your current role? 
+    <select id="dropdown" name="dropdown">
+      <option value="">Select current role</option>
+      <option value="1">Student</option>
+      <option value="2">Full Time Job</option>
+      <option value="3">Full Time Learner</option>
+      <option value="4">Prefer not to say</option>
+      <option value="5" >Other</option>
+    </select>
+  </label>
+  <label>Would you recommend freeCodeCamp to a friend?</label>
+    <label><input class="inline" type="radio" name="recommend" value="definitely" checked/>Definitely</label>
+    <label><input class="inline" type="radio" name="recommend" value="maybe"/>Maybe</label>
+    <label><input class="inline" type="radio" name="recommend"value="not-sure"/>Not sure</label> 
+
+    <label for="dropdowns">What is your favorite feature of freeCodeCamp? 
+    <select id="dropdowns" name="dropdowns">
+      <option value="">Select an option</option>
+      <option value="1">Challenges</option>
+      <option value="2">Project</option>
+      <option value="3">Community</option>
+      <option value="4">Open Source</option>
+    </select>
+  </label>
+
+  <label>What would you like to see improved? (Check all that apply)</label>
+    <label><input class="inline" type="checkbox" value="front-end-projects" name="improved" checked/>Front-end Projects</label>
+    <label><input class="inline" type="checkbox" value="back-end-projects" name="improved"/>Back-end Projects</label>
+    <label><input class="inline" type="checkbox" value="data-visualization" name="improved"/>Data Visualization</label>
+    <label><input class="inline" type="checkbox" value="challenges" name="improved"/>Challenges</label>
+    <label><input class="inline" type="checkbox" value="open-source-community" name="improved"/>Open Source Community</label>
+    <label><input class="inline" type="checkbox" value="gitter-help-rooms" name="improved"/>Gitter help rooms</label>
+    <label><input class="inline" type="checkbox" value="videos" name="improved"/>Videos</label>
+    <label><input class="inline" type="checkbox" value="city" name="improved"/>City Meetups</label>
+    <label><input class="inline" type="checkbox" value="wiki" name="improved"/>Wiki</label>
+    <label><input class="inline" type="checkbox" value="forum" name="improved"/>Forum</label>
+    <label><input class="inline" type="checkbox" value="additional-courses" name="improved"/>Additional Courses</label>
+
+    <label>Any comments or suggestions?<textarea name="comment" placeholder="Enter your comment here"></textarea></label>
+
+    <button type="submit" id="submit">Submit</button>
+  </fieldset>
+  
+</form>
+</div>
+</body>
+
+<html>
+CSS
+body{
+  width:100%;
+  height:100vh;
+  margin:0; 
+  color:#f5f6f7;
+  font-family:Tahoma;
+  background-color:#1b1b32;
+  background-image:linear-gradient(90deg,rgba(50,50,255,0.8), rgba(200,255,255,0.8)),url(https://www.forbes.com/advisor/wp-content/uploads/2022/06/freecodecamp.jpeg.jpg);
+}
+header{
+  margin:2.8rem auto;
+}
+h1, p{
+  text-align:center;
+  
+  margin:0 0 0.5rem 0;
+}
+label{
+  display:block;
+  margin:1.5rem 0;
+}
+#title{
+  
+  font-size:2em;
+  font-weight:400;
+  line-height:1.2;
+}
+#description{
+  font-style:italic;
+}
+form{
+  width:80vw;
+  margin: 0 auto;
+  max-width:1000px;
+  min-width:300px;
+}
+input, textarea, select{
+  width:100%;
+  border-radius:4px;
+  min-height:3em;
+  margin:10px 0 0 0;
+  border-color:none;
+}
+.inline{
+  width:unset;
+  margin:0 0.5rem 0 0;
+  vertical-align:middle;
+}
+button{
+  width:100%;
+  display:block;
+  margin:0 auto;
+  background-color:hsl(140,50%,40%);
+  border:none;
+  color:white;
+  padding:0.5rem 0;
+}
+button:hover{
+  background-color:#1b561b;
+}
+fieldset{
+  padding:0 2rem 2rem 2rem ;
+  background-color:#1b1b32aa;
+  border:none;
+  border-radius:4px
+
+}
+textarea{
+  height:5rem;
+}

@@ -1,0 +1,340 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"/>
+     <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+      <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header id="header">
+       <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo" id="header-img" >
+       <nav id="nav-bar">
+        <ul>
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#how_it_works">How It Works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="features">
+        <header>
+          <h1>Handcrafted, home-made masterpieces</h1>
+        </header>
+          <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+          <div class="form">
+            <input type="email" name="email" id="email" placeholder="  Enter your email address">
+          </div>
+          <div class="form">
+            <input type="submit" id="submit" value="Get Started">
+          </div>
+          </form>
+      </section>
+      <section id="how_it_works">
+        <div class="icon-with-text">
+        <div class="icon">
+          <i class="fa fa-fire"></i>
+          <i class="fa fa-truck"></i>
+          <i class="fa fa-battery-full"></i>
+        </div>
+          <ul>
+          <li class="first">
+            <h3>Premium Materials</h3>
+            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p> 
+          </li>         
+          <li>
+          <h3>Fast Shipping</h3>
+          <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+          </li>
+          <li>
+          <h3>Quality Assurance</h3>
+          <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+          </li>
+        </ul>
+        </div>
+        <div class="yt">
+          <iframe id="video" src="https://youtu.be/y8Yv4pnO7qc"></iframe>
+        </div>
+      </section>
+      <section id="pricing">
+        <div class="card">
+          <div class="card-head">
+            <h4>TENOR TROMBONE</h4>
+          </div>
+          <div class="card-body">
+            <h3>$600</h3>
+            <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+            <button type="submit">Select</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <h4>BASS TROMBONE</h4>
+          </div>
+          <div class="card-body">
+            <h3>$900</h3>
+            <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+            <button type="submit">Select</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head">
+            <h4>VALVE TROMBONE</h4>
+          </div>
+          <div class="card-body">
+            <h3>$1200</h3>
+            <p>Lorem ipsum. Lorem ipsum. Lorem ipsum dolor. Lorem ipsum.</p>
+            <button type="submit">Select</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div></div>
+      <ul>
+        <li><a>Privacy</a></li>
+        <li><a>Terms</a></li>
+        <li><a>Contact</a></li>
+      </ul>
+      <p>Copyright 2016, Original Trombones</p>
+    </footer>
+  </body>
+</html>
+CSS
+:root{
+  --main-color1:#fabc16;
+}
+*,::before, ::after{
+  padding:0;
+  margin:0
+}
+html{
+  font-size:62.5%;
+  box-sizing:border-box;
+}
+body{
+  font-family: Baskervville;
+  color:#1f1f1f;
+  background-color:#daedec;
+}
+h1{
+  font-family: raleway, sans-serif;
+  font-weight:bold;
+}
+#header{
+  width:100%;
+  height:10%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#b6d1d0;
+  position:fixed;
+  top:0;
+}
+#header-img{
+  width:40rem;
+  padding:0.4rem;
+  aspect-ratio: 35/4;
+}
+a{
+  text-decoration:none;
+  color:#364742;
+}
+#nav-bar{
+  width:50%;
+  height:100%;
+}
+#nav-bar ul{
+display:flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+align-items: center;
+padding-inline-start: 0;
+margin-block:0;
+height: 100%;
+}
+#nav-bar li{
+  font-size: 1.8rem;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+  font-family: raleway;
+  list-style:none;
+}
+main{
+  width:100%;
+  display:grid;
+  grid-template-columns: 1fr 95rem 1fr;
+}
+section header{
+  margin-top:6rem;
+  margin-bottom:0;
+  padding: 2rem 0 0 0;
+  text-align:center;
+}
+#form{
+  margin:0.5rem auto auto 0;
+  padding:0.5rem;
+}
+section{
+  grid-column:2/3;
+  font-size:1.6rem;
+  font-family:raleway;
+  margin: 0 auto 30px auto;
+}
+.form{
+  width:100%;
+  margin:1rem auto 0 auto;
+  padding:0 auto;
+  text-align:center;
+}
+input[id="email"]{
+  width:80%;
+  height: 16%;
+  margin:auto;
+}
+input[id="submit"]{
+  display:block;
+  margin: 10px auto;
+  width:40%;
+  padding:5px;
+  border:none;
+  font-size:1.5rem;
+  font-weight:bold;
+  background-color:var(--main-color1);
+}
+input[id="submit"]:hover, button:hover{
+  background-color:yellow;
+  cursor:pointer;
+}
+.icon{
+  display:grid;
+  row-gap:2rem;
+}
+.icon-with-text{
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap:3rem;
+}
+.fa{
+  color:var(--main-color1);
+  font-size:6rem;
+  padding:2px;
+  text-align:center;
+}
+#how_it_works ul{
+  padding: 1rem ; 
+  margin: 0 auto;
+} 
+#how_it_works li:not(.first){
+  margin-top:2rem;
+}
+#how_it_works li{
+  list-style:none;
+  font-size:1.7rem;
+  
+}
+#how_it_works h3{
+  font-size:2.5rem;
+}
+.yt{
+  margin: 2rem 20%;
+}
+#video{
+  width:100%
+}
+#pricing{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap:2rem;
+}
+.card{
+  border:1px solid black;
+  background-color: GhostWhite;
+  text-align:center;
+  box-shadow:0 1rem 1rem grey
+}
+.card-head{
+  font-size:1.8rem;
+  padding:1.8rem;
+  background-color:
+#d4d4d4
+;
+}
+.card-body h3{
+  font-size:2.5rem;
+  padding:1rem;
+}
+.card-body{
+  padding:0 6rem 4rem 6rem;
+  font-size:1.8rem;
+}
+button{
+  display:block;
+  margin: 20px auto 0 auto;
+  width:40%;
+  padding:5px;
+  font-size:1.5rem;
+  border:none;
+  background-color:var(--main-color1);
+}
+footer{
+  background-color:#b6d1d0;
+  text-align:end;
+  padding:2rem;
+  width:100%;
+}
+footer ul{
+  display:flex;
+  justify-content:end;
+}
+footer li{
+  list-style:none;
+  margin:0 1rem 0 1rem;
+}
+footer p, footer li{
+  font-size:1.6rem;
+}
+footer a:hover{
+  cursor:pointer;
+}
+
+@media only screen and (max-width: 720px) {
+#header-img{
+  width:20rem;
+}
+main{
+  display:grid;
+  grid-template-columns:1fr
+}
+#how_it_works ul{
+  padding-right:2.5rem;
+}
+#pricing{
+  display:grid;
+  grid-template-columns:1fr;
+  
+}
+.card{
+  margin-bottom:2rem;
+}
+}
+@media only screen and (max-width: 600px) {
+  #nav-bar li{
+    font-size:1.3rem;
+  }
+  .fa{
+    font-size:4.3rem;
+    margin-top:2rem;
+  }
+  #how_it_works li{
+    font-size:1.5rem
+  }
+}

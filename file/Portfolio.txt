@@ -1,0 +1,406 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>Personal Portfolio</h1>
+    <nav id="navbar">    
+      <ul>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+      <section id="welcome-section">
+        <h1>Hey! I am Artisan</h1>
+        <p>a future web developer</p>
+      </section>
+      <section id="projects">
+        <div class="empty">
+          <hr>
+              <p>"Sometimes it's better to leave something alone, to pause, and that's very true of programming."</p>
+              <p> - Joyce Wheeler</p>
+          <hr>
+        </div>
+        <h1>These are some of my projects</h1>
+        <div class="img-holder">
+        <div class="project-tile">
+          <div class="body">
+            <a  id="project-link" href="https://www.freecodecamp.org/Artisan_23"><img src="https://venngage-wordpress.s3.amazonaws.com/uploads/2018/03/survey-infographic-.jpg"alt="project1" target="_blank"></a>
+          </div>
+          <div class="card-footer">
+            <a  id="project-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank"><h3>Survey form</h3></a>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="body">
+            <a  id="project-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank"><img src="https://static.tutorialandexample.com/html/design-a-tribute-page-using-html-and-css1.png"alt="project2"></a>
+          </div>
+          <div class="card-footer">
+            <a id="project-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank"><h3> Tribute Page </h3></a>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="body">
+            <a id="project-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank"><img src="https://assets.plan.io/images/blog/5-setps-to-create-technical-documentation.png"alt="project3"></a>
+          </div>
+          <div class="card-footer">
+            <a id="project-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank"><h3>Technical Documentation Page</h3></a>
+          </div>
+        </div>
+        <div class="project-tile">
+          <div class="body">
+            <a id="project-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank"><img src="https://cdn-m.leadpages.com/leadpages-home.appspot.com/leadpages_blog/2022/03/Blog-Feature@2x.jpg"alt="project4"></a>
+          </div>
+          <div class="card-footer">
+            <a id="project-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank"><h3>Product Landing Page</h3></a>
+          </div>
+        </div> 
+        </div>
+        <div class="show">
+           <a id="project-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank"><p>Show all <i class="fa fa-arrow-right"></i></p></a>
+        </div>  
+      </section>
+      <section id="contact">
+        <div class="last">
+          <h1>Let's Work Together</h1>
+          <blockquote>
+            <hr/>
+          <p>"Coffee is a language itself."</p>
+            
+          <p>-Jackie Chan</p>
+          <hr/>
+          </blockquote>
+          <div class="socials">
+            <ul>
+              <li>
+                <a id="profile-link" class="profile-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank">
+                  <i class="fab fa-free-code-camp"> freeCodeCamp</i>
+                </a>
+              </li>
+              <li>
+                <a id="profile-link" class="profile-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank">
+                  <i class="fab fa-facebook"> Facebook</i>
+                </a>
+              </li>
+              <li>
+                <a id="profile-link" class="profile-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank">
+                  <i class="fab fa-twitter"> Twitter</i>
+                </a>
+              </li>
+              <li>
+                <a id="profile-link" class="profile-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank">
+                  <i class="fab fa-instagram"> Instagram</i>
+                </a>
+              </li>
+              <li>
+                <a id="profile-link" class="profile-link" href="https://www.freecodecamp.org/Artisan_23" target="_blank">
+                  <i class="fab fa-github"> Github</i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="content">
+      <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+      <p>© Created for freeCodeCamp <i class="fab fa-free-code-camp"></i>.</p>
+      </div>
+    </footer>
+  </body>
+</html>
+CSS
+:root{
+  --font-color1:#d7e4fc;
+}
+
+html{
+  font-family:Tahoma, sans-serif;
+  font-size: 10px;
+  box-sizing:border-box;
+}
+body{
+ background-color:#dee8fa;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+header{
+  width:100%;
+  height:12%;
+  padding-top:1rem;
+  background-color:#263552;
+  display:flex;
+  justify-content: space-between;
+  position:fixed;
+  top:0;
+
+}
+header h1{
+  padding:0.4rem;
+  aspect-ratio:35/4;
+  text-align:center;
+  color:var(--font-color1);
+}
+#navbar{
+  width:40%;
+  height:100%;
+}
+#navbar ul{
+  padding-top: 1rem;
+  display:flex;
+  justify-content: space-evenly;
+}
+#navbar li{
+  list-style:none;
+  font-size: 1.4rem;
+  
+}
+#navbar a{
+  text-decoration:none;
+  color:var(--font-color1);
+}
+#navbar a:hover{
+  font-size:1.6rem;
+  transition-duration:0.2s;
+transition-timing-function:ease-in-out;
+cursor:pointer;
+}
+main{
+  width:100%;
+  margin:0;
+  padding:0;
+}
+#welcome-section{
+  width:100%;
+  height:100vh;
+  background-image:linear-gradient(120deg,#9bbdfa, rgba(200,255,255,0.8)),url(https://www.forbes.com/advisor/wp-content/uploads/2022/06/freecodecamp.jpeg.jpg);
+  padding-top: 12%;
+  margin: 0 auto;
+  text-align:center;
+}
+#welcome-section h1{
+  font-size:5rem;
+  margin-top:10rem;
+  color:#242424;
+}
+#welcome-section p{
+  font-size:1.8rem;
+  color:#353536;
+}
+#projects .empty{
+  width:100%;
+  height:10%;
+}
+.empty p, #contact p{
+  text-align:center;
+  font-size:1.6rem;
+  color:#353536;
+  padding: .8rem;
+  margin:0;
+}
+hr{
+  border-color: #1a2438;
+  width:60rem;
+}
+#projects{
+  margin:3rem;
+}
+
+#projects h1{
+  text-align: center;
+  font-size:3rem;
+  margin-top:5rem;
+  padding-top:2rem
+}
+#projects .img-holder{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+#projects .project-tile{
+  max-width:400px;
+  max-height:350px;
+  margin:.4rem;
+  padding:0.4rem;
+}
+.project-tile .body{
+  max-width:100%;
+  height:300px;
+  padding:0;
+  margin: 0;
+}
+.body img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.project-tile .card-footer{
+  text-align:center;
+  width:100%;
+  background-color:#263552;
+  font-size:1.8rem;
+  margin-top:-2rem;
+}
+.card-footer h3{
+  padding: 1.5rem;
+}
+.card-footer a:hover{
+  color:yellow;
+}
+.card-footer a{
+  text-decoration:none;
+  color:var(--font-color1);
+}
+.show{
+  width:10rem;
+  height: 4rem;
+  margin:2rem auto;
+  background-color:#263552;
+  border:none;
+}
+.show:hover{
+  background-color:#88d1c3;
+ 
+}
+.show a:hover{
+ color:#263552;
+}
+.show a{
+  text-decoration:none;
+  color:var(--font-color1); 
+}
+.show p{
+  text-align:center;
+  padding:1rem 0;
+  font-size:1.5rem; 
+}
+#contact{
+  width:100%;
+  height:100vh;
+  background-color:#88d1c3;
+  text-align:center;
+  padding:2rem 0 ;
+  
+}
+#contact .last{
+  width:100%;
+
+  padding: 15rem 0;
+}
+#contact h1{
+  font-size:3rem;
+  color: #1a2438;
+}
+.socials{
+  width:80%;
+  margin: 3rem auto;
+}
+#contact ul{
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center; 
+  flex-wrap:wrap; 
+}
+#contact li{
+    font-size:1.5rem;
+    list-style:none;
+}
+#contact a{
+  text-decoration:none;
+  color:#1a2438;
+  font-size:1.8rem
+}
+#contact a:hover{
+  font-size:2.2rem;
+  transition-duration:0.2s;
+  transition-timing-function:ease-in-out;
+  transition-delay:.1s;
+  color:#047a62;
+}
+
+footer{
+  position:relative;
+  margin:0;
+  width:100%;
+}
+footer .content{
+  width:100%;
+  margin: 0;
+  text-align:center; 
+}
+footer p{
+  display:inline-block;
+  margin:2rem;
+  font-size:1.4rem
+}
+footer p:nth-of-type(1){
+  margin-right: 3rem;
+}
+
+@media (prefers-reduced-motion: no-preference){
+*{
+  scroll-behavior:smooth;
+ }
+}
+
+@media only screen and (max-width:768px){
+  header{
+    height:10%;
+  }
+  
+}
+@media only screen and (max-width:400px){
+  header{
+    height:9%;
+  }
+  header h1{
+    width:50%;
+    padding-left:0;
+    font-size:1.7rem;
+  }
+  #navbar{
+    width:50%
+  }
+  #navbar li{
+    font-size:1rem;
+  }
+  #navbar a:hover{
+    font-size:1.2rem;
+  }
+  #projects .project-tile:last-of-type{
+  margin-top:5rem;
+  }
+
+  #contact ul{
+    display:block;
+    
+  }
+  #contact li{
+    margin:1rem auto;
+    padding-right:4rem;
+  }
+  #contact .last{
+    width:100%;
+    margin:1rem auto;
+  }
+  #contact hr{
+    width:100%;
+  }
+}
